@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <title>SH ShoppingMall</title>
+    <style>
+        #logoLink {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--쇼핑몰 상단 영역-->
+    <header>
+        <!--쇼핑몰 로고-->
+        <div id="divLogo">
+            <h1><a id="logoLink" href="index.html">SHOP</a></h1>
+        </div>
+        <!--쇼핑몰 로고-->
+
+        <!--쇼핑몰 메인 메뉴-->
+        <nav>
+            <div id="divNavMain">
+                <ul>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN US</a></li>
+                    <li><a href="#">CART</a></li>
+                    <li><a href="#">NOTICE</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--쇼핑몰 메인 메뉴-->
+
+        <!-- 현재 페이지 위치 전시-->
+        <div id="pageArea">
+            <div>후드티</div>
+            <ul>
+                <li>Home</li>
+                <li>TOP</li>
+            </ul>
+        </div>
+        <!-- 현재 페이지 위치 전시 -->
+
+        <!--쇼핑몰 상품 메뉴-->
+        <nav>
+            <div id="divNavProduct">
+                <ul>
+                    <li><a href="#">OUTER</a></li>
+                    <li><a href="#">TOP</a></li>
+                    <li><a href="#">BOTTOM</a></li>
+                    <li><a href="#">DRESS</a></li>
+                    <li><a href="#">SHOES/BAG</a></li>
+                    <li><a href="#">ACC</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--쇼핑몰 상품 메뉴-->
+    </header>
+    <!--쇼핑몰 상단 영역-->
+
+    <!--쇼핑몰 메인 영역-->
+    <section>
+        <!-- 상품 정보 전시-->
+        <div>
+            <!--상품 360도 회전화면 전시-->
+            <div id="imgRotateView">
+                <img src="img/view/th01.jpg" width="120px">
+                <img src="img/view/th02.jpg" width="120px">
+                <img src="img/view/th03.jpg" width="120px">
+                <img src="img/view/th04.jpg" width="120px">
+            </div>
+
+            <!--상품 크게 보기 화면 전시-->
+            <div id="imgWholeView">
+                <img src="img/view/01.jpg" width="500px">
+            </div>
+
+            <!-- 상품 구매 정보 화면-->
+            <div id="purchaseInfo">
+                <ul>
+                    <li>후드티</li>
+                    <li>￦110,000</li>
+                    <form>
+                        <li>
+                            <div id="productSizeDiv">
+                                <select name="productSize">
+                                    <option value="none" selected>사이즈</option>
+                                    <option value="L">L</option>
+                                    <option value="R">R</option>
+                                    <option value="XL">XL</option>
+                                    <option value="Free">FREE</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <select name="productNum">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </li>
+                    </form>
+                </ul>
+
+                <ul>
+                    <li>Product info</li>
+                    <li>후드티, Size FREE<br>
+                        <button>Buy</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 상품 정보 전시-->
+
+        <!-- 리뷰 정보 전시-->
+        <div id="review">
+            <img src="img/view/prod-img.jpg" width="500px">
+            <div id="revieTotalInfo">
+                74 Reviews 77% 의 구매자들이 이 상품에 만족하고있어요!
+                <ul>
+                    <li> 5★ : 43</li>
+                    <li> 4★ : 16</li>
+                    <li> 3★ : 9</li>
+                    <li> 2★ : 4</li>
+                    <li> 1★ : 2</li>
+                </ul>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <!-- 리뷰 정보 전시-->
+
+    </section>
+    <!--쇼핑몰 메인 영역-->
+
+    <!--쇼핑몰 하단 영역-->
+    <footer>
+        <div id="ShopInfo">
+            SHOP<br>
+            대표:김철수<br>
+            사업자 등록번호. 000-00-00000<br>
+            서울특별시 동대문구<br>
+        </div>
+
+        <div id="ShopDetailInfo">
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!--쇼핑몰 하단 영역-->
+</body>
+
+</html>
