@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의류 쇼핑몰</title>
+    <link rel="stylesheet" href="css/comon.css">
+    <link rel="stylesheet" href="css/order.css">
+    <script src="js/order.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <h1>SHOP</h1>
+            <ul class="sub-menu">
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">JOIN US</a></li>
+                <li><a href="#">CART</a></li>
+                <li><a href="#">NOTICE</a></li>
+            </ul>
+        </div>
+
+        <nav>
+            <ul class="inner">
+                <li><a href="#">OUTER</a></li>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#">BOTTOM</a></li>
+                <li><a href="#">DRESS</a></li>
+                <li><a href="#">SHOES</a></li>
+                <li><a href="#">ACC</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="top_area">
+        <div class="inner">
+            <div class="top-title">주문하기</div>
+            <ul class="breadcrumb">
+                <li>Home</li>
+                <li>Order</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="section-view">
+            <h2>상품정보</h2>
+            <div class="box order-product">
+                <img class="https://c...content-available-to-author-only...x.studio/img/shop/single/gallery/th01.jpg">
+                <div class="product-info">
+                    <span>수량 : 1</span>
+                    <span class="product-price">\110,000</span>
+                </div>
+            </div>
+
+            <form name="orderForm" id="orderForm" method="post">
+                <h2>주문자 정보</h2>
+                <ul class="box order-info">
+                    <li>
+                        <label for="inputName">이름</label>
+                        <input type="text" id="inputName" name="inputName" size="20" class="input-text">
+                    </li>
+                    <li>
+                        <label for="inputEmail">이메일</label>
+                        <input type="email" id="inputEmail" name="inputEmail" placeholder="ex: 123@gmail.com" size="30"
+                            class="input-text">
+                    </li>
+                    <li>
+                        <label for="inputPhone">휴대폰번호</label>
+                        <input type="tel" id="inputPhone" name="inputPhone" placeholder="ex: Hong Gil Dong01012341234"
+                            size="30" class="input-text">
+                    </li>
+                    <li>
+                        <label for="inputAddress">주소</label>
+                        <input type="text" id="inputAddress" name="inputAddress" placeholder="ex: Hong Gil Dong서울시 강남구"
+                            size="70" class="input-text">
+                    </li>
+                    <li>
+                        <label for="inputAddress2">나머지 주소</label>
+                        <input type="text" id="inputAddress2" name="inputAddress2" placeholder="ex: Hong Gil Dong000 건물"
+                            size="70" class="input-text">
+                    </li>
+                    <li>
+                        <input type="checkbox" name="gridCheck" id="gridCheck">
+                        <label for="gridCheck">
+                            개인정보 활용 동의
+                        </label>
+                    </li>
+                </ul>
+
+                <h2>결제 정보</h2>
+                <ul class="box order-payment">
+                    <li>
+                        <label for="inputCardNumber1">카드번호</label>
+                        <input type="tel" id="inputCardNumber1" name="inputCardNumber1" size="4" maxlength="4"
+                            class="input-text">
+                        <input type="tel" id="inputCardNumber2" name="inputCardNumber2" size="4" maxlength="4"
+                            class="input-text">
+                        <input type="tel" id="inputCardNumber3" name="inputCardNumber3" size="4" maxlength="4"
+                            class="input-text">
+                        <input type="password" id="inputCardNumber4" name="inputCardNumber4" size="4" maxlength="4"
+                            class="input-text">
+                    </li>
+                    <li>
+                        <label for="inputCardUser">카드 소유자 이름</label>
+                        <input type="text" id="inputCardUser" name="inputCardUser" placeholder="ex: HONGGILDONG"
+                            class="input-text">
+                    </li>
+                    <li>
+                        <label for="inputCardExpire">유효기간</label>
+                        <input type="text" id="inputCardExpire" name="inputCardExpire" placeholder="MM/YY" size="8"
+                            maxlength="5" class="input-text">
+                    </li>
+                    <li>
+                        <label for="inputCardCVC">CVC</label>
+                        <input type="text" id="inputCardCVC" name="inputCardCVC" size="3" maxlength="3"
+                            class="input-text">
+                    </li>
+                </ul>
+
+                <button type="submit" class="order-btn">주문하기</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <div class="shop-name">SHOP</div>
+            <div>대표: 김철수</div>
+            <div>사업자 등록번호. 000-00-00000</div>
+            <div>서울특별시 동대문구</div>
+        </div>
+        <ul class="footer-link">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+    </footer>
+    <script src="js/order.js"></script>
+</body>
+
+</html>

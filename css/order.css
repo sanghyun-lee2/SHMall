@@ -1,0 +1,17 @@
+h2{
+    margin-top:0;
+}
+.box{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.order-product img,.order-product .product-info{display: inline-block; vertical-align: middle;}
+.order-product .product-info span{display: block;}
+.product-info .product-price{margin-bottom: 7px; color: #4E54C8; font-family: Tahoma;font-size: 15px;}
+.order-info label{display: inline-block;width: 220px;}
+.order-payment label{display: inline-block;width: 220px;}
+.box .input-text{border: 1px solid #CCC;border-radius: 5px;height: 30px;}
+.box li{margin-bottom: 5px;}
+.order-btn{display: inline-block;width: 200px;height: 40px;text-align: center;color: #FFF;border: 0;border-radius: 5px;background-color: #FE696A;line-height: 40px;}

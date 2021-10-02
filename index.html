@@ -15,11 +15,11 @@
 <body>
     <header>
         <!--쇼핑몰 상단 영역-->
-        <nav class="py-2 mb-6 border-bottom">
-            <div class="container d-flex flex-wrap justify-content-center">
+        <nav class="py-3 px-5 mb-6 border-bottom">
+            <div class="d-flex flex-wrap justify-content-center">
                 <a href="index.html"
                     class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-                    <span class="fs-4">SHOP</span>
+                    <span class="fs-2"><strong>SHOP</strong></span>
                 </a>
                 <ul class="nav nav-pills black">
                     <li class="nav-item"><a href="#" class="nav-link">LOGIN</a></li>
@@ -28,106 +28,121 @@
                     <li class="nav-item"><a href="#" class="nav-link">NOTICE</a></li>
                 </ul>
             </div>
+
         </nav>
         <!--쇼핑몰 상단 영역-->
 
         <!--쇼핑몰 상품 카테고리 메뉴-->
-        <nav class="py-2">
-            <div class="container d-flex flex-wrap">
-                <ul class="nav me-auto">
-                    <li class="nav-item"><a href="#" class="nav-link link-dark px-4">OUTER</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-dark px-4">TOP</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-dark px-4">BOTTOM</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-dark px-4">DRESS</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-dark px-4">SHOES/BAG</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-dark px-4">ACC</a></li>
-                </ul>
+        <nav class="py-3 px-5">
+            <ul class="nav me-auto">
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-4">OUTER</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-4">TOP</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-4">BOTTOM</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-4">DRESS</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-4">SHOES/BAG</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-4">ACC</a></li>
+            </ul>
             </div>
+
         </nav>
         <!--쇼핑몰 상품 카테고리 메뉴-->
     </header>
 
     <!--쇼핑몰 메인 영역-->
-    <section>
-        <!-- p-4 -->
-        <div class=" p-md-5 mb-4 text-white rounded bg-dark">
-            <div class="col-md-6 px-0">
-                <h2 class="display-7 fst-italic">ALL PRODUCT</h2>
+    <section class="border-bottom">
+        <!-- 선택 카테고리 영역-->
+        <div class="py-2 p-md-5 mb-4 text-white rounded bg-dark" id="pageArea">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 px-0">
+                    <h2 class="display-7">ALL PRODUCT</h2>
+                </div>
+                <div class="col-md-1">
+                    <h6 class="mt-auto">Home</h6>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-md-11"></div>
+                <div class="col-md-1 text-right">&lt;1/5&gt;</div>
+            </div>
+        </div>
+        <!-- 선택 카테고리 영역-->
+
+        <!-- 상품 목록 전시-->
+        <div class="">
+            <div class="row py-5 px-5">
+                <!--패딩-->
+                <div class="col-md-1"></div>
+                <!--패딩-->
+                <div class="col-md-2">
+                    <div><img src="img/01.jpg" width="200px"></div>
+                    <div class="py-3 productCat">TOP</div>
+                    <div class="productName"><strong>후드티</strong></div>
+                    <div class="pt-0 text-primary productPrice">￦110,000</div>
+                    <div class="pt-2 text-white"><button type="button" onclick="location.href='product.html'"
+                            class="btn btn-danger">구매하기</button>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div><img src="img/02.jpg" width="200px"></div>
+                    <div class="py-3 productCat">TOP</div>
+                    <div class="productName"><strong>코튼 레이스 블라우스</strong></div>
+                    <div class="pt-0 text-primary productPrice">￦28,500</div>
+                    <div class="pt-2 text-white"><button type="button" onclick="location.href='product.html'"
+                            class="btn btn-danger">구매하기</button>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div><img src="img/03.jpg" width="200px"></div>
+                    <div class="py-3 productCat">BOTTOM</div>
+                    <div class="productName"><strong>하이웨스트 반바지</strong></div>
+                    <div class="pt-0 text-primary productPrice">￦49,500</div>
+                    <div class="pt-2 text-white"><button type="button" onclick="location.href='product.html'"
+                            class="btn btn-danger">구매하기</button>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div><img src="img/04.jpg" width="200px"></div>
+                    <div class="py-3 productCat">TOP</div>
+                    <div class="productName"><strong>스포츠 탑</strong></div>
+                    <div class="pt-0 text-primary productPrice">￦68,500</div>
+                    <div class="pt-2 text-white"><button type="button" onclick="location.href='product.html'"
+                            class="btn btn-danger">구매하기</button>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div><img src="img/05.jpg" width="200px"></div>
+                    <div class="py-3 productCat">Sunglasses</div>
+                    <div class="productName"><strong>썬글라스</strong></div>
+                    <div class="pt-0 text-primary productPrice">￦200,000</div>
+                    <div class="pt-2 text-white"><button type="button" onclick="location.href='product.html'"
+                            class="btn btn-danger">구매하기</button>
+                    </div>
+                </div>
+                <!--패딩-->
+                <div class="col-md-1"></div>
+                <!--패딩-->
             </div>
         </div>
 
-        <!-- 현재 페이지 위치 전시-->
-        <div id="pageArea">
-            <div>ALL PRODUCT</div>
-            <ul>
-                <li>Home</li>
-            </ul>
-        </div>
-        <!-- 현재 페이지 위치 전시 -->
-
-        <!-- 현재 페이지 번호 전시 -->
-        <div id="pageNum">
-            <div>&lt;1/5&gt;</div>
-        </div>
-        <!-- 현재 페이지 위치 전시 -->
-
-        <!-- 상품 목록 전시-->
-        <div id="productList">
-            <ul>
-                <li>
-                    <div><img src="img/01.jpg" width="200px"></div>
-                    <div class="productCat">TOP</div>
-                    <br>
-                    <div class="productName">후드티</div>
-                    <div class="productPrice">￦110,000</div>
-                    <div class="productLink"><a href="Hood01.html">구매하기</a></div>
-                </li>
-
-                <li>
-                    <div><img src="img/02.jpg" width="200px"></div>
-                    <div class="productCat">TOP</div>
-                    <br>
-                    <div class="productName">코튼 레이스 블라우스</div>
-                    <div class="productPrice">￦28,500</div>
-                    <div class="productLink"><a href="#">구매하기</a></div>
-                </li>
-
-                <li>
-                    <div><img src="img/03.jpg" width="200px"></div>
-                    <div class="productCat">BOTTOM</div>
-                    <br>
-                    <div class="productName">하이웨스트 반바지</div>
-                    <div class="productPrice">￦49,500</div>
-                    <div class="productLink"><a href="#">구매하기</a></div>
-                </li>
-
-                <li>
-                    <div><img src="img/04.jpg" width="200px"></div>
-                    <div class="productCat">TOP</div>
-                    <br>
-                    <div class="productName">스포츠 탑</div>
-                    <div class="productPrice">￦68,500</div>
-                    <div class="productLink"><a href="#">구매하기</a></div>
-                </li>
-
-                <li>
-                    <div><img src="img/05.jpg" width="200px"></div>
-                    <div class="productCat">Sunglasses</div>
-                    <br>
-                    <div class="productName">썬글라스</div>
-                    <div class="productPrice">￦200,000</div>
-                    <div class="productLink"><a href="#">구매하기</a></div>
-                </li>
-
-                <li>
+        <div class="">
+            <div class="row py-5 px-5">
+                <!--패딩-->
+                <div class="col-md-1"></div>
+                <!--패딩-->
+                <div class="col-md-2">
                     <div><img src="img/06.jpg" width="200px"></div>
-                    <div class="productCat">BAG</div>
-                    <br>
-                    <div class="productName">백팩</div>
-                    <div class="productPrice">￦79,500</div>
-                    <div class="productLink"><a href="#">구매하기</a></div>
-                </li>
-            </ul>
+                    <div class="py-3 productCat">BAG</div>
+                    <div class="productName"><strong>백팩</strong></div>
+                    <div class="pt-0 text-primary productPrice">￦79,500</div>
+                    <div class="pt-2 text-white"><button type="button" onclick="location.href='product.html'"
+                            class="btn btn-danger">구매하기</button>
+                    </div>
+                </div>
+                <!--패딩-->
+                <div class="col-md-1"></div>
+                <!--패딩-->
+            </div>
         </div>
         <!-- 상품 목록 전시-->
     </section>
@@ -135,19 +150,20 @@
 
     <!--쇼핑몰 하단 영역-->
     <footer>
-        <div id="ShopInfo">
-            SHOP<br>
-            대표:김철수<br>
-            사업자 등록번호. 000-00-00000<br>
-            서울특별시 동대문구<br>
-        </div>
-
-        <div id="ShopDetailInfo">
-            <ul>
-                <li><a href="#">회사소개</a></li>
-                <li><a href="#">이용약관</a></li>
-                <li><a href="#">개인정보처리방침</a></li>
-            </ul>
+        <div class="row py-3">
+            <div class="col-md-4"></div>
+            <div class="col-md-2 px-0 border-end">
+                <h4><strong>SHOP</strong></h4>
+                <small>대표:김철수</small><br>
+                <small>사업자 등록번호. 000-00-00000</small><br>
+                <small>서울특별시 동대문구</small><br>
+            </div>
+            <div class="col-md-2 px-4 pt-4">
+                <small>회사소개</small><br>
+                <small>이용약관</small><br>
+                <small>개인정보처리방침</small><br>
+            </div>
+            <div class="col-md-4"></div>
         </div>
     </footer>
     <!--쇼핑몰 하단 영역-->
