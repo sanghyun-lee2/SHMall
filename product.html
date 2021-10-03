@@ -63,64 +63,48 @@
                 </div>
             </div>
             <div class="row pt-5">
-                <div class="col-md-11"></div>
-                <div class="col-md-1 text-right">&lt;1/5&gt;</div>
+                <div class="col-md-10"></div>
+                <div class="col-md-2 text-right">&lt;1/5&gt;</div>
             </div>
         </div>
         <!-- 선택 카테고리 영역-->
 
         <!-- 상품 정보 전시-->
-        <div>
-            <!--상품 360도 회전화면 전시-->
-            <div id="imgRotateView">
-                <img src="img/view/th01.jpg" width="120px">
-                <img src="img/view/th02.jpg" width="120px">
-                <img src="img/view/th03.jpg" width="120px">
-                <img src="img/view/th04.jpg" width="120px">
-            </div>
-
-            <!--상품 크게 보기 화면 전시-->
-            <div id="imgWholeView">
-                <img src="img/view/01.jpg" width="500px">
-            </div>
-
-            <!-- 상품 구매 정보 화면-->
-            <div id="purchaseInfo">
-                <ul>
-                    <li>후드티</li>
-                    <li>￦110,000</li>
-                    <form>
-                        <li>
-                            <div id="productSizeDiv">
-                                <select name="productSize">
-                                    <option value="none" selected>사이즈</option>
-                                    <option value="L">L</option>
-                                    <option value="R">R</option>
-                                    <option value="XL">XL</option>
-                                    <option value="Free">FREE</option>
-                                </select>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <select name="productNum">
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </div>
-                        </li>
-                    </form>
-                </ul>
-
-                <ul>
-                    <li>Product info</li>
-                    <li>후드티, Size FREE<br>
-                        <button>Buy</button>
-                    </li>
-                </ul>
+        <div class="py-2 container box">
+            <div class="row">
+                <div class="col-md-1" id="imgRotateView">
+                    <img src="img/view/th01.jpg" width="120px"><br>
+                    <img src="img/view/th02.jpg" width="120px"><br>
+                    <img src="img/view/th03.jpg" width="120px"><br>
+                    <img src="img/view/th04.jpg" width="120px"><br>
+                </div>
+                <div class="col-md-7 text-center" id="imgWholeView">
+                    <img src="img/view/01.jpg" width="500px">
+                </div>
+                <div class="col-md-4 pt-4">
+                    <div class="text-primary py-3" id="productPrice">￦110,000</div>
+                    <div>
+                        <select class="form-select form-select mb-3" aria-label=".form-select-lg example">
+                            <option selected>사이즈</option>
+                            <option value="1">XS</option>
+                            <option value="2">S</option>
+                            <option value="3">M</option>
+                            <option value="4">L</option>
+                            <option value="5">XL</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="form-select form-select mb-3" aria-label=".form-select-lg example">
+                            <option selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="pt-2 text-white"><button type="button" onclick="location.href='order.html'"
+                            class="btn btn-danger">구매하기</button>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- 상품 정보 전시-->

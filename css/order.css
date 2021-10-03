@@ -7,7 +7,9 @@ h2{
     margin-bottom: 20px;
     border-radius: 10px;
 }
-.order-product img,.order-product .product-info{display: inline-block; vertical-align: middle;}
+.order-product img,.order-product .product-info{
+    display: inline-block; vertical-align: middle;
+}
 .order-product .product-info span{display: block;}
 .product-info .product-price{margin-bottom: 7px; color: #4E54C8; font-family: Tahoma;font-size: 15px;}
 .order-info label{display: inline-block;width: 220px;}
