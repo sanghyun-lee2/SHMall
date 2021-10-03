@@ -1,4 +1,9 @@
+
 window.addEventListener('load', function () {
+    loadStorageData();
+
+    document.getElementById('save-btn').onclick = btnClickOrdersave;
+
     var orderForm = document.getElementById('orderForm');
     orderForm.addEventListener('submit', function (e) {
         e.preventDefault(); // submit을 중지한다.
@@ -95,3 +100,53 @@ window.addEventListener('load', function () {
         this.value = this.value.replace(/[^0-9]/g, '');
     });
 }); // 저장
+
+function btnClickOrdersave() {
+    let selForm = document.querySelector("#orderForm");
+
+    // Getting an FormData
+    let data = new FormData(selForm);
+
+    // Getting a Serialize Data from FormData
+    let serializedFormData = serialize(data);
+
+    // Setting a Temp Data to Textarea
+    localStorage.setItem('OrderInfo', JSON.stringify(serializedFormData));
+}
+
+function serialize(rawData) {
+    let rtnData = {};
+
+    for (let [key, value] of rawData) {
+        let sel = document.querySelectorAll("[name=" + key + "]");
+
+        // Array Values
+        if (sel.length > 1) {
+            if (rtnData[key] === undefined) {
+                rtnData[key] = [];
+            }
+            rtnData[key].push(value);
+        }
+        // Other
+        else {
+            rtnData[key] = value;
+        }
+    } return rtnData;
+}
+
+// 로컬스토리지에서 주문, 결제 정보를 읽어와서 해당 입력란에 로드
+function loadStorageData() {
+    var orderObject = localStorage.getItem('OrderInfo');
+    var jsonOrder = JSON.parse(orderObject); // json 파싱
+
+    for (key in jsonOrder) {
+        // id에 해당되는 input 객체 가져옴
+        var inputObj = document.getElementById(key);
+
+        // input 객체의 텍스트를 로컬스토리지에 저장된 값으로 채움
+        inputObj.value = jsonOrder[key];
+
+        //console.log(jsonOrder[key]);
+        //console.log('key:' + key + ' / ' + 'value:' + jsonOrder[key]);
+    }
+}

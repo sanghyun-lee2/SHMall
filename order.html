@@ -6,43 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>의류 쇼핑몰</title>
-    <link rel="stylesheet" href="css/comon.css">
-    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
     <script src="js/order.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="inner">
-            <h1>SHOP</h1>
-            <ul class="sub-menu">
-                <li><a href="#">LOGIN</a></li>
-                <li><a href="#">JOIN US</a></li>
-                <li><a href="#">CART</a></li>
-                <li><a href="#">NOTICE</a></li>
-            </ul>
-        </div>
-
-        <nav>
-            <ul class="inner">
-                <li><a href="#">OUTER</a></li>
-                <li><a href="#">TOP</a></li>
-                <li><a href="#">BOTTOM</a></li>
-                <li><a href="#">DRESS</a></li>
-                <li><a href="#">SHOES</a></li>
-                <li><a href="#">ACC</a></li>
-            </ul>
+        <!--쇼핑몰 상단 영역-->
+        <nav class="py-3 px-5 mb-6 border-bottom">
+            <div class="d-flex flex-wrap justify-content-center">
+                <a href="index.html"
+                    class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                    <span class="fs-2"><strong>SHOP</strong></span>
+                </a>
+                <ul class="nav nav-pills black">
+                    <li class="nav-item"><a href="#" class="nav-link">LOGIN</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">JOIN US</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CART</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">NOTICE</a></li>
+                </ul>
+            </div>
         </nav>
+        <!--쇼핑몰 상단 영역-->
+
+        <!--쇼핑몰 상품 카테고리 메뉴-->
+        <nav class="py-3 px-5">
+            <ul class="nav me-auto">
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-4">OUTER</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-4">TOP</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-4">BOTTOM</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-4">DRESS</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-4">SHOES/BAG</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-4">ACC</a></li>
+            </ul>
+            </div>
+        </nav>
+        <!--쇼핑몰 상품 카테고리 메뉴-->
     </header>
 
     <div class="top_area">
-        <div class="inner">
-            <div class="top-title">주문하기</div>
-            <ul class="breadcrumb">
-                <li>Home</li>
-                <li>Order</li>
-            </ul>
+        <!-- 선택 카테고리 영역-->
+        <div class="py-2 p-md-5 mb-4 text-white rounded bg-dark" id="pageArea">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-9 px-0">
+                    <h2 class="display-7">주문하기</h2>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="mt-auto">Home > Order</h6>
+                </div>
+            </div>
         </div>
+        <!-- 선택 카테고리 영역-->
     </div>
 
     <div class="container">
@@ -122,24 +142,30 @@
                 </ul>
 
                 <button type="submit" class="order-btn">주문하기</button>
+                <button type="button" id="save-btn">임시저장</button>
             </form>
         </section>
     </div>
 
+    <!--쇼핑몰 하단 영역-->
     <footer>
-        <div class="footer-info">
-            <div class="shop-name">SHOP</div>
-            <div>대표: 김철수</div>
-            <div>사업자 등록번호. 000-00-00000</div>
-            <div>서울특별시 동대문구</div>
+        <div class="row py-3">
+            <div class="col-md-4"></div>
+            <div class="col-md-2 px-0 border-end">
+                <h4><strong>SHOP</strong></h4>
+                <small>대표:김철수</small><br>
+                <small>사업자 등록번호. 000-00-00000</small><br>
+                <small>서울특별시 동대문구</small><br>
+            </div>
+            <div class="col-md-2 px-4 pt-4">
+                <small>회사소개</small><br>
+                <small>이용약관</small><br>
+                <small>개인정보처리방침</small><br>
+            </div>
+            <div class="col-md-4"></div>
         </div>
-        <ul class="footer-link">
-            <li><a href="#">회사소개</a></li>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">개인정보처리방침</a></li>
-        </ul>
     </footer>
-    <script src="js/order.js"></script>
+    <!--쇼핑몰 하단 영역-->
 </body>
 
 </html>
